@@ -1,23 +1,12 @@
-// import logo from './logo.svg';
-// import './App.css';
-import { useState } from 'react';
-import Header from './New folder/Header';
-import Feedbackitem from "./New folder/Feedbackitem";
-import Feedbackdata from "./New folder/data/Feedbackdata"; 
-import Feedbacklist from "./New folder/Feedbacklist";
+import React, { useState } from 'react'
+import TodoList from './TodoList'
 
-function App() {
-const [Feedback, setFeedback] = useState(Feedbackdata)
-
-
-    return (
-      <>
-      <Header />
-    <div className="container">
-      <Feedbacklist flist ={Feedback}/>
-          </div>
-    </>
-  );
+const App = () => {
+  return (
+    <div>
+      <TodoList />
+    </div>
+  )
 }
 
 export default App;
